@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>NextPrest</title>
+  <link rel="stylesheet" type="text/css" href="assets/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cormorant&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Serif+Caption&display=swap" rel="stylesheet">
+  <style>
+    .header{
+      background-image: url(assets/images/slide.jpg);
+      background-size: cover;
+      height: 100vh;
+      width: 100vw;
+      cursor: pointer;
+    }
+    body{
+      font-family: 'Montserrat', sans-serif;
+
+    }
+    .navbar-nav{
+      float: none;
+      text-align: center;
+    }
+    .advent{
+  background-image: url("assets/images/adventure.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: cover;
+  right: 0px;
+  top: 250%;
+  height: 500px;
+  z-index: -1;
+  width: 1500px
+}
+section{
+  overflow-y: hidden;
+  width: 100%;
+  height: 500px;
+  position: absolute;
+  left: 0px;
+  margin-top: 100px;
+  background-image: url("assets/images/mountain.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+  </style>
+  
+</head>
+<body>
+  <section class="header">
+      <header>
+          
+          <nav>
+              <ul class="nav__links">
+                  <li><a href="#">EN <i class="fas fa-chevron-down"></i></a></li>
+                  <li><a href="#">USD <i class="fas fa-chevron-down"></i></a></li>
+                  <li><a href="#">DELIVERY</a></li>
+                  <li><a href="#">CONTACT US</a></li>
+                  <li><a href="#">SITEMAP</a></li>
+                  <li><a href="#">BLOG</a></li>
+                  <li><a href="#"><i class="far fa-heart"></i> MY WISHES</a></li>
+                  <li><a href="#"><i class="far fa-user"></i> SIGN IN</a></li>
+              </ul>
+          </nav>
+    <div class="second">
+         
+          <nav>
+              <img class="logo" src="assets/images/logo.jpg" alt="logo">
+              <ul class="links">
+                  <li><a href="#">SNOWBOARDS</a></li>
+                  <li><a href="#">SNOWBOARD GEAR</a></li>
+                  <li><a href="#">APPAREL</a></li>
+                  <li><a href="#">FOOTWEAR</a></li>
+                  <li><a href="#">ACCESSORIES</a></li>
+                  <li><a href="#">BAGS AND LUGGAGES</a></li>
+                  <li><a href="#">SALE</a></li>
+                <span>
+                  <li><a href="#"></a><i class="fas fa-search"></i></li>
+                  <li><a href="#"></a><i class="fas fa-shopping-cart"></i></li>
+                </span>
+              </ul>
+          </nav>
+        </div>      
+
+          
+          <p onclick="openNav()" class="menu cta" style="margin-left: 140px;"><i class="fas fa-bars" style="color: white;font-size: 1.5em;"></i> <i class="fas fa-search" style="color: white;font-size: 1.5em;margin-left: 25px;"></i>
+            <i class="far fa-heart" style="color: white;font-size: 1.5em;margin-left: 25px;"></i> <i class="far fa-user" style="color: white;font-size: 1.5em;margin-left: 25px;"></i>
+            <i class="fas fa-shopping-cart" style="color: white;font-size: 1.5em;margin-left: 25px;"></i>
+          </p>
+
+      </header>
+      <div id="mobile__menu" class="overlay">
+          <a class="close" onclick="closeNav()">&times;</a>
+          <div class="overlay__content">
+              <a href="#">SNOWBOARDS</a>
+              <a href="#">SNOWBOARD GEAR</a>
+              <a href="#">APPAREL</a>
+              <a href="#">FOOTWEAR</a>
+              <a href="#">ACCESSORIES</a>
+              <a href="#">BAGS AND LUGGAGES</a>
+          </div>
+      </div>
+  
+   <div class="name">
+      <h2>MEN / WOMEN / KIDS</h2>
+      <h1>Casual Jackets</h1>
+      <p>Gear up from Head to Toe</p>
+    </div>
+
+    <div class="butt">
+      <div class="b1">
+          <a href="#">SHOP NOW</a>
+      </div>
+   </div>
+  </section>
+     
+  
+  <div class="container">
+    <div class="row">
+
+      <div class="banner_img1 col-md-4 card">
+        <img src="assets/images/b1.jpg" height="300" width="400">
+        <h4>SNOWBOARD JACKET</h4>
+        <a href="#">Men / Women / Kids</a>
+        </div>
+
+        <div class="banner_img2 col-md-4 card">
+        <img src="assets/images/b2.jpg" height="300" width="400">
+        <h4>SNOWBOARDS</h4>
+        <a href="#">Men / Women / Kids</a>
+        </div>
+
+        <div class="banner_img3 col-md-4 card">
+        <img src="assets/images/b3.jpg" height="300" width="400">
+        <h4>BASE LAYERS</h4>
+        <a href="#">Men / Women / Kids</a>
+      </div>
+  </div>
+
+   <br><br> <br>
+
+  <div class="container-fluid ">
+    <h5 class="text-center"><b>NEW ARRIVALS</b></h5>
+    <div class="row">
+      <!--  
+      <div class="box1 col-md-3">
+        <img src="assets/images/jacket1.jpg" height="230" width="180">
+        <p style="font-size: 12px;">THE NORTHERN FACE THERMOBALL <BR>ZIP PACKET</p>
+        </div>
+
+        <div class="box2 col-md-3">
+        <img src="assets/images/jacket2.jpg" height="230"  width="180">
+        
+        </div>
+
+        <div class="box3 col-md-3">
+        <img src="assets/images/jacket3.jpg" height="230"   width="180">
+       
+      </div>
+      <div class="box3 col-md-3">
+        <img src="assets/images/helmet.jpg" height="230"  width="180">
+      -->
+      <div class="box1">
+        <k class="new">NEW</k>
+        <img src="assets/images/jacket1.jpg" height="230" width="180">
+        <p style="font-size: 13px;" class="text-center">THE NORTHERN FACE THERMOBALL <span>ZIP JACKET</span></p>
+        <b>$240.00</b>
+      </div>
+      
+      <div class="box2">
+          <k class="new">NEW</k>
+        <img src="assets/images/jacket2.jpg" height="230" width="180">
+        <p style="font-size: 13px;" class="text-center">THE NORTHERN FACE PERRITO REVERSIBLE<span>JACKET</span></p>
+        <b>$330.00</b>
+      </div>
+      <div class="box3">
+          <k class="new">NEW</k>
+        <img src="assets/images/jacket3.jpg" height="230" width="180">
+        <p style="font-size: 13px;" class="text-center">THE NORTHERN ATLAS TRICULIMATE <span>JACKET</span></p>
+        <b>$250.00</b>
+      </div>
+      <div class="box4">
+          <k class="new">NEW</k>
+        <img src="assets/images/helmet.jpg" height="230" width="180">
+        <p style="font-size: 13px;" class="text-center">SMITH VANTAGE HELMET</p>
+        <b>$60.00</b>
+      </div>
+  </div>
+
+    <p style="margin-left: 700px;font-size: 14px;margin-top: 850px;"><b>NEXT EVOLUTION</b></p>
+  <section class="advent">
+      <h1>Your Favourite Brand</h1>
+      <p>All clothes items you can find in our online store right now<br>
+          <span style="margin-left: 70px;">with ease with <b>one click only.</span></b></p>
+
+          <div class="image">
+            <img class="cool" src="assets/images/cooler.jpg">
+            <img class="jerkin" src="assets/images/jacket3.jpg">
+            <img class="boot" src="assets/images/big.jpg">
+          </div>
+  </section> 
+
+  <div class="deal">
+    <h6>DEAL OF THE DAY</h6>
+    <div class="deal1">
+      <o>ON SALE!</o><br>
+      <k>NEW</K>
+      <img src="assets/images/board1.jpg" height="230" width="180">
+      <p style="margin-left: 60px;">ATOMIC NOMAD</p>
+      <g id="rate" style="position: absolute;margin-top: 330px;z-index: 1;margin-left: 60px">$164.90 <span>$170.00</span></g>
+    </div>
+    <div class="deal2">
+        <o>ON SALE!</o><br>
+        <k>NEW</K>
+      <img src="assets/images/hell.jpg" height="230" width="180">
+      <P style="margin-left: 40px;">ELECTRIC SAINT HELMET</P>
+      <p id="price">$122.22 <span>$126.00</span></p>
+      </div>
+      <div class="deal3">
+          <o>ON SALE!</o><br>
+          <k>NEW</K>
+      <img src="assets/images/board2.jpg" height="230" width="180">
+      <P style="margin-left: 40px;">NEW ECO ORG ART</P>
+      <p id="price">$237.50 <span>$250.00</span></p>
+        </div>
+        <div class="deal4">
+            <o>ON SALE!</o><br>
+            <k>NEW</k>
+      <img src="assets/images/board3.jpg" height="230" width="180">
+      <P>ROSSIGNOL TEMPTATION 84 SKIS</P>
+      <p id="price">$180.50 <span>$190</span></p>
+          </div>
+        
+  </div>
+
+  <div class="zoom">
+   <div class="zoom1">
+      <img src="assets/images/1.jpg" height="300px" width="600px">
+    </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
+    <div class="zoom2">
+      <img src="assets/images/2.jpg">
+     
+    </div><br><br>
+    
+    <div class="zoom3">
+        <img src="assets/images/3.jpg">
+    </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
+    <div class="zoom3">
+        <img src="assets/images/4.jpg"> 
+    </div>
+    
+                
+  </div>
+  
+  <div class="shop">
+    <h5>SHOP THE BRAND</h5>
+    <img src="assets/images/1-brand.jpg" height="100px" width="150px">
+  </div>
+  
+
+ <section>
+    
+    <div class="over">
+      <img src="assets/images/logo.jpg" height="40" width="300">
+      <p>© 2019 - Ecommerce software by <br>PrestaShop™</p>
+      <div class="item">
+      <ul>
+        <li><a href="#">FACEBOOK</a></li>
+        <li><a href="#">TWITTER</a></li>
+        <li><a href="#">YOUTUBE</a></li>
+        <li><a href="#">PINTEREST</a></li>
+        <li><a href="#">INSTAGRM</a></li>
+
+      </ul>
+      <ul>
+        <li><a href="#">DELIVERY</a></li>
+        <li><a href="#">ABOUT US</a></li>
+        <li><a href="#">SECURE PAYMENT</a></li>
+        <li><a href="#">PAGES CONFIGURATION</a></li>
+        <li><a href="#">PRICES DROP</a></li>
+        <li><a href="#">NEW PRODUCTS</a></li>
+        <li><a href="#">CONTACT US</a></li>
+        <li><a href="#">SITEMAP</a></li>
+        <li><a href="#">BLOG</a></li>       
+        <li><a href="#">LOKBOOK</a></li>
+      </ul>
+      <ul>
+          <li><a href="#">PERSONAL INFO</a></li>
+          <li><a href="#">ORDERS</a></li>
+          <li><a href="#">CREDIT SLIPS</a></li>
+          <li><a href="#">ADDRESSES</a></li>
+          <li><a href="#">MY WISHLISTS</a></li>
+      </ul>
+    </div>
+    </div>
+    <div class="address">
+            <h6><b>Address:</b><br>
+              My Company,4578 Marmora<br>
+              road,Glasgow
+            </h6>
+            <h6><b>Phone:</b><br>800-2345-6799</h6>
+            <h6><b>Email:</b><br>demo@demo.com</h6>
+          </div>
+    
+ </section>
+
+
+  
+ 
+
+  
+ 
+
+
+
+
+
+
+<!----
+<div class="arrivals">
+  <div class="box1 col-md-3">
+
+    <h style="color: blue;position: relative;top: 20px;left: 20px;border: 1px solid blue;padding: 5px 30px;font-size: 10px;">NEW</h>
+    <img src="assets/images/jacket1.jpg" style="width: 180px;height: 230px;margin: 15px 40px;">
+    <p style="font-size: 13px;position: relative;top:15px;">THE NORTH FACE THRMOBALL FULL <span style="margin-left: 80px;">ZIP JACKET</span></p>
+    <p style="position: relative;top: 10px;left: 85px;font-size: 12px;font-weight: bolder;">240,000 $</p>
+  </div>
+    <div class="box2 col-md-3">
+      <j style="color: blue;position: relative;top: 20px;left: 20px;border: 1px solid blue;padding: 5px 30px;font-size: 10px;">NEW</j>
+    <img src="assets/images/jacket2.jpg" style="width: 180px;height: 230px;margin: 20px 40px;">
+    <p style="font-size: 13px;position: relative;top:15px;">THE NORTH FACE PERRITO REVERSIBLE <span style="margin-left: 100px;">JACKET</span></p>
+    <p style="position: relative;top: 5px;left: 95px;font-size: 12px;font-weight: bolder;">330,000 $</p>
+  </div>
+  <div class="box3 col-md-3">
+      <k style="color: blue;position: relative;top: 20px;left: 20px;border: 1px solid blue;padding: 5px 30px;font-size: 10px;">NEW</k>
+    <img src="assets/images/jacket3.jpg" style="width: 180px;height: 230px;margin: 20px 40px;">
+    <p style="font-size: 13px;position: relative;top:15px;">THE NORTH FACE ATLAS TRICLIMATE <BR><span style="margin-left: 100px;">JACKET</span></p>
+      <p style="position: relative;top: 10px;left: 95px;font-size: 12px;font-weight: bolder;">250,000 $</p>
+    </div>
+  <div class="box4 col-md-3">
+      <m style="color: blue;position: relative;top: 20px;left: 20px;border: 1px solid blue;padding: 5px 30px;font-size: 10px;">NEW</m>
+    <img src="assets/images/helmet.jpg" style="width: 180px;height: 230px;margin: 20px 40px;">
+    <p style="font-size: 13px;position: relative;top:15px;left: 50px;">SMITH VANTAGE HELMET</p>
+    <p style="position: relative;top: 10px;left: 95px;font-size: 12px;font-weight: bolder;">60,000 $</p>
+  </div>
+</div>-->
+<!--JS link-->
+<script>
+    function openNav() {
+  document.getElementById("mobile__menu").style.width = "50%";
+}
+
+function closeNav() {
+  document.getElementById("mobile__menu").style.width = "0";
+}
+
+</script>
+  <script src="assets/js/jquery-3.4.1.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+
+</body>
+</html>
